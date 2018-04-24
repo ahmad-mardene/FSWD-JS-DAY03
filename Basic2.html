@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<label>value 1 <input id="one" type="number" name="one" value=""></label> <br><br>
+	<label>value 2 <input id="two" type="number" name="tow" value=""></label> <br><br>
+	<label>value 3 <input id="three" type="number" name="three" value=""></label> <br> <br>
+	<label>value 4 <input id="four" type="number" name="four" value=""></label> <br><br>
+	<label>value 5 <input id="five" type="number" name="five" value=""></label> <br> <br>
+	<label>max<input id="max" type="number"></label>
+	<button onclick="max()">get the maximum</button>
+    <script type="text/javascript">
+    	function max(){
+    	    var one = parseInt(document.getElementById('one').value);
+    	    var two = parseInt(document.getElementById('two').value);
+    	    var three = parseInt(document.getElementById('three').value);
+    	    var four = parseInt(document.getElementById('four').value);
+    	    var five = parseInt(document.getElementById('five').value);
+    	    var max = document.getElementById("max").innerHTML = Math.max(one, two, three, four, five);
+    	    document.write(max);
+}
+
+    </script>
+	
+
+</body>
+</html>
